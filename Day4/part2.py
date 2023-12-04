@@ -16,4 +16,4 @@ for card_num, line in enumerate(data):
     for i in range(next_cards_won):
         copy_tracker[card_num + i + 1] += copy_tracker[card_num] # i starts with 0
 
-print(sum(copy_tracker))
+print(sum(copy_tracker[:len(data)]))
